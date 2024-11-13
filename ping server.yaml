@@ -1,0 +1,6 @@
+- name: ping the server 
+  hosts:mongdb
+#this is list of task
+  tasks:
+- name: pinging the server 
+  ansible.bulitin.ping

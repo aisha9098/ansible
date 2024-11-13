@@ -1,0 +1,32 @@
+= inventory
+
+[mongodb]
+
+roboshop-us-dev-db-mongodb-01.joindevops.cfd
+
+[mysql]
+
+roboshop-us-dev-db-mysql-01.joindevops.online roboshop-us-dev-db-mysql-02.joindevops.cfd
+
+[cart]
+
+roboshop-in-prod-app-cart-01.joindevops.cfd
+roboshop-in-prod-app-cart-02.joindevops.cfd 
+roboshop-in-prod-app-cart-03.joindevops.cfd
+
+[user]
+
+roboshop-in-prod-app-user-01.joindevops.cfd
+roboshop-in-prod-app-user-02.joindevops.cfd
+
+[db:children]
+
+mongodb
+
+mysql
+
+[app:children]
+
+cart
+
+user
